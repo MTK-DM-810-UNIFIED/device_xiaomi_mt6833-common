@@ -177,6 +177,7 @@ vendor.media.omx=0
 vendor.mtk.vdec.waitkeyframeforplay=9
 
 # HWUI
+debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 
 # Neural Networks

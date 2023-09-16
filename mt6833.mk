@@ -141,6 +141,13 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     libdrm.vendor
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder.vendor \
+    android.hidl.allocator@1.0.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \

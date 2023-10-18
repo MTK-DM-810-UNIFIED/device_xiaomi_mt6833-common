@@ -205,6 +205,9 @@ PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
 
 # Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayMT6833
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions

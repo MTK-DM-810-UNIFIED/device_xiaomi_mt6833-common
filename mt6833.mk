@@ -19,6 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6833-common/mt6833-common-vendor.mk)
 
+# Inherit Vendor GApps
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 

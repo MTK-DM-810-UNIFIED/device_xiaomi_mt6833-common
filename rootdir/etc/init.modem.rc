@@ -21,7 +21,6 @@ on early-init
     write /sys/class/net/ccmni20/queues/rx-0/rps_cpus "0D"
 
 on post-fs-data
-    write /proc/bootprof "post-fs-data: on modem start"
     write /proc/sys/net/ipv4/ipfrag_high_thresh 20971520
 
     # Encrypt phone function

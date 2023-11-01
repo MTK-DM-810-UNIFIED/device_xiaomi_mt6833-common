@@ -60,6 +60,10 @@ fi
 
 function blob_fixup {
 	case "$1" in
+		vendor/bin/mnld | vendor/lib*/libaalservice.so | vendor/lib*/libcam.utils.sensorprovider.so)
+			grep -q "libsensorndkbridge.so" "${2}" && \
+			"${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "${2}"
+			;;
 		vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
 			sed -i 's/start/enable/' "${2}"
 			;;

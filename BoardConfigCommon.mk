@@ -8,6 +8,7 @@ COMMON_PATH := device/xiaomi/mt6833-common
 
 # A/B
 AB_OTA_UPDATER := true
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
 AB_OTA_PARTITIONS += \
     boot \

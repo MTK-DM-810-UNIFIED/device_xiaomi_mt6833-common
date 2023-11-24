@@ -44,46 +44,6 @@ namespace usb {
 namespace V1_3 {
 namespace implementation {
 
-Return<bool> Usb::enableUsbDataSignal(bool enable) {
-    bool result = true;
-
-    ALOGI("Userspace turn %s USB data signaling", enable ? "on" : "off");
-
-    if (enable) {
-        if (!WriteStringToFile("1", USB_DATA_PATH)) {
-            ALOGE("Not able to turn on usb connection notification");
-            result = false;
-        }
-
-        if (!WriteStringToFile(kGadgetName, PULLUP_PATH)) {
-            ALOGE("Gadget cannot be pulled up");
-            result = false;
-        }
-    } else {
-        if (!WriteStringToFile("1", ID_PATH)) {
-            ALOGE("Not able to turn off host mode");
-            result = false;
-        }
-
-        if (!WriteStringToFile("0", VBUS_PATH)) {
-            ALOGE("Not able to set Vbus state");
-            result = false;
-        }
-
-        if (!WriteStringToFile("0", USB_DATA_PATH)) {
-            ALOGE("Not able to turn on usb connection notification");
-            result = false;
-        }
-
-        if (!WriteStringToFile("none", PULLUP_PATH)) {
-            ALOGE("Gadget cannot be pulled down");
-            result = false;
-        }
-    }
-
-    return result;
-}
-
 // Set by the signal handler to destroy the thread
 volatile bool destroyThread;
 
@@ -108,6 +68,57 @@ int32_t readFile(const std::string &filename, std::string *contents) {
   }
 
   return -1;
+}
+
+Return<bool> Usb::enableUsbDataSignal(bool enable) {
+    bool result = true;
+    std::string gadgetName = GetProperty(kGadgetName, "");
+    std::string dataPath = UDC_PATH + gadgetName + "/device/" + USB_DATA_PATH;
+    std::string mode;
+
+    ALOGI("Userspace turn %s USB data signaling", enable ? "on" : "off");
+
+    if (gadgetName.empty()) {
+        ALOGI("can't get controller name");
+        result = false;
+    }
+
+    if (enable) {
+        if (readFile(dataPath, &mode)) {
+           ALOGE("Not able to check USB mode");
+           result = false;
+           goto done;
+        }
+
+        if (mode == "3") {
+            ALOGI("USB is force on mode");
+        } else if (!WriteStringToFile("1", dataPath)) {
+            ALOGE("Not able to turn on USB connection");
+            result = false;
+        }
+
+        usleep(100000);
+
+        if (!WriteStringToFile(gadgetName, PULLUP_PATH)) {
+            ALOGE("Gadget cannot be pulled up");
+            result = false;
+        }
+    } else {
+        if (!WriteStringToFile("0", dataPath)) {
+            ALOGE("Not able to turn on USB connection");
+            result = false;
+        }
+
+        usleep(100000);
+
+        if (!WriteStringToFile("none", PULLUP_PATH)) {
+            ALOGE("Gadget cannot be pulled down");
+            result = false;
+        }
+    }
+
+done:
+    return result;
 }
 
 Status queryMoistureDetectionStatus(hidl_vec<PortStatus> *currentPortStatus_1_2) {

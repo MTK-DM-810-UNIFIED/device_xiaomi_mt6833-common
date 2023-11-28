@@ -55,6 +55,10 @@ vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.hfg.enable=1
 vendor.mtk.camera.app.fd.video=1
 
+# Chipset
+ro.soc.manufacturer=Mediatek
+ro.soc.model=MT6833P
+
 # DRM
 ro.netflix.bsp_rev=MTK6833-32817-1
 

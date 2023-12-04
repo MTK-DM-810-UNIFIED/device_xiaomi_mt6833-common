@@ -68,19 +68,12 @@ function blob_fixup {
 		vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
 			"${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
 			;;
-		vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
-			grep -q "android.hardware.power-V2-ndk_platform.so" "${2}" && \
-			"${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
-			;;
 		vendor/bin/mnld | vendor/lib*/libaalservice.so | vendor/lib*/libcam.utils.sensorprovider.so)
 			grep -q "libsensorndkbridge.so" "${2}" && \
 			"${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "${2}"
 			;;
 		vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
 			sed -i 's/start/enable/' "${2}"
-			;;
-		vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
-			echo "$(cat ${2}) input" > "${2}"
 			;;
 		vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
 			sed -i 's/1.1/1.2/' "$2"

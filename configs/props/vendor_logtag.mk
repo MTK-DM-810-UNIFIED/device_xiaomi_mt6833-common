@@ -248,6 +248,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.MAPI-SocketConnection=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.MAPI-SocketListener=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.MAPI-CommandProcessor=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.libperfmgr=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.libPowerHal=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.mtkpower@impl=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.mtkpower_client=$(VENDOR_LOG_LEVEL) \

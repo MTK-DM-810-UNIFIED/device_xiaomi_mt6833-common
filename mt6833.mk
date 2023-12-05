@@ -315,6 +315,9 @@ PRODUCT_PACKAGES += \
     libmtkperf_client_vendor
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 

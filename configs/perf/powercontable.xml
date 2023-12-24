@@ -85,7 +85,7 @@
     <CMD name="PERF_RES_SCHED_BOOST" id="0x01410000">
         <Entry path="/sys/devices/system/cpu/sched/sched_boost"></Entry>
         <Compare>more</Compare>
-        <MaxValue>6</MaxValue>
+        <MaxValue>2</MaxValue>
         <MinValue>0</MinValue>
     </CMD>
     <CMD name="PERF_RES_SCHED_MIGRATE_COST" id="0x01414000">
@@ -291,7 +291,7 @@
         <Entry path="/proc/perfmgr/tchbst/user/usrtch"></Entry>
         <Compare>more</Compare>
         <MaxValue>2000000000</MaxValue>
-        <MinValue>100000</MinValue>
+        <MinValue>10000000</MinValue>
         <DefaultValue>200000000</DefaultValue>
         <Prefix>duration^</Prefix>
     </CMD>

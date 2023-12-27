@@ -22,6 +22,9 @@ $(call inherit-product, vendor/xiaomi/mt6833-common/mt6833-common-vendor.mk)
 # Inherit Vendor GApps
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
+# MIUI Dolby
+$(call inherit-product-if-exists, vendor/xiaomi/dolby/miuidolby.mk)
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 

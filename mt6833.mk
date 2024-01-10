@@ -166,8 +166,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1.vendor:64 \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
-    libdrm.vendor \
-    libutils-v32
+    libdrm.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \

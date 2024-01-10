@@ -60,8 +60,8 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.3-impl:32
 
 PRODUCT_PACKAGES += \
@@ -110,9 +110,9 @@ PRODUCT_PACKAGES += \
 
 # Boot Control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-impl \
-    android.hardware.boot@1.2-impl.recovery
+    android.hardware.boot@1.1-service \
+    android.hardware.boot@1.1-impl \
+    android.hardware.boot@1.1-impl.recovery
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -128,7 +128,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.3.vendor
 
 # FM Radio
 PRODUCT_PACKAGES += \
@@ -201,10 +201,10 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.hardware_keystore.km41.xml \
-    libkeymaster4_1support.vendor \
-    libkeymaster41.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.hardware_keystore.km40.xml \
+    libkeymaster4_0support.vendor \
+    libkeymaster40.vendor \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
 
@@ -326,8 +326,8 @@ include $(LOCAL_PATH)/configs/props/vendor_logtag.mk
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio@1.6.vendor
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio@1.5.vendor
 
 # Recovery
 PRODUCT_PACKAGES += \

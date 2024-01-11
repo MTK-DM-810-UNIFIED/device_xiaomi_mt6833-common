@@ -246,6 +246,11 @@ vendor/etc/slp_conf
 # Gatekeeper
 -vendor/lib64/hw/gatekeeper.beanpod.so
 
+# GPU
+-vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
+vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
+-vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml
+
 # Graphics
 -vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc

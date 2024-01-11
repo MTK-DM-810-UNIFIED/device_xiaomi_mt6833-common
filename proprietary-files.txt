@@ -378,6 +378,13 @@ vendor/etc/init/vpud.rc
 -vendor/lib/libvcodec_oal.so
 -vendor/lib64/libstagefrighthw.so
 
+# Netagent
+-vendor/bin/netdagent
+vendor/etc/init/netdagent.rc
+-vendor/lib64/libforkexecwrap.so
+-vendor/lib64/libifcutils_mtk.so
+-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
 # NVRAM
 -vendor/bin/fuelgauged
 -vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
@@ -505,13 +512,6 @@ vendor/thh/ta/3d08821c33a611e6a1fa089e01c83aa2.ta
 vendor/thh/ta/655a4b46cd7711eaaafbf382a6988e7b.ta
 vendor/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta
 vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
-
-# Tether Offload
--vendor/bin/netdagent
-vendor/etc/init/netdagent.rc
--vendor/lib64/libforkexecwrap.so
--vendor/lib64/libifcutils_mtk.so
--vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal (Hardware)
 -vendor/bin/hw/android.hardware.thermal@2.0-service.mtk

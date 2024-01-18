@@ -17,4 +17,9 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <!-- The position of the volume dialog on the screen.
+         See com.android.systemui.volume.VolumeDialogImpl.
+         Value 21 corresponds to RIGHT|CENTER_VERTICAL. -->
+    <integer name="volume_dialog_gravity">19</integer>
+
 </resources>

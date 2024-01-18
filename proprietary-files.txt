@@ -210,6 +210,16 @@ vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/lib64/libwvhidl.so
 -vendor/lib64/mediadrm/libwvdrmengine.so
 
+# Engineering - from Redmi/light/light:14/UP1A.230905.011/V816.0.5.0.ULSCNXM:user/release-keys
+-system_ext/app/EngineerMode/EngineerMode.apk|aeb7abf177883fc7f8aadafc548f01e5cbaa3260
+-system_ext/lib64/libem_support_jni.so|81df2d9c7ba303a25e52e69a7b738bd8cd0eb1f2
+-vendor/bin/em_hidl|74253331dee5a92f0ece04d35cf7899162a96cf5
+vendor/etc/init/em_hidl_user.rc|bdb5893df3e78d2d2adaf72bc7e56dfeee0be308
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so|444376addf581bfc66409ad39a73ffe498e4142e
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so|a13d422113c5bde4dc8a36336a6436e09cb37b86
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so|6cdc256e6559cba5f47b4aa1382d13790e91773c
+-vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so|1c170c8e48c5cd52fd0bc903758be03c16e90091
+
 # FM Radio
 -system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
 vendor/firmware/fm_cust.cfg

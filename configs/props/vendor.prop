@@ -183,6 +183,11 @@ ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# Mediatek
+ro.vendor.mediatek.platform=MT6833
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp-mt6785
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp-mt6785-V1.12.13_xiaomi.s0mp1.k85v1.64_P58
+
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn.option=A,B,E,F,Z

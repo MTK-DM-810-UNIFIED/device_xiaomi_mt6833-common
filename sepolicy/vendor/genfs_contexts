@@ -1,0 +1,6 @@
+# Health
+genfscon sysfs /devices/platform/mt_charger/power_supply/ac                                        u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery                                      u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/usb                                       u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/11e00000.i2c0/i2c-0/0-0066/power_supply/sc8551-standalone         u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify                            u:object_r:sysfs_batteryinfo:s0

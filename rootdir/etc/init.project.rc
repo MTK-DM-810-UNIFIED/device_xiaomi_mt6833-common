@@ -1,3 +1,5 @@
+import /vendor/etc/init/init.batterysecret.rc
+
 on init	
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw	
     mkdir /storage/usbotg 0700 root root	

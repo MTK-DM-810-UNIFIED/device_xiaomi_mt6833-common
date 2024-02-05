@@ -132,6 +132,10 @@ vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 -vendor/lib64/libaiawb_p1ggm.so
 -vendor/lib64/libaiawb_sun_model.so
 -vendor/lib64/libalCFR.so
+-vendor/lib64/libarcsoft_dualcam_refocus_image.so
+-vendor/lib64/libarcsoft_dualcam_refocus_video.so
+-vendor/lib64/libarcsoft_hdr_detection.so
+-vendor/lib64/libarcsoft_high_dynamic_range.so
 -vendor/lib64/libarcsoft_low_light_hdr.so
 -vendor/lib64/libbwc.so
 -vendor/lib64/libcam.halsensor.hwintegration.so

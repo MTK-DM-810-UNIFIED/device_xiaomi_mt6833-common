@@ -128,6 +128,10 @@ vendor/firmware/soc2_2_ram_bt_1a_1_hdr.bin|b4e9dfd91db040e5d85b6875e427511195a5a
 -vendor/lib64/libaiawb_p1ggm.so
 -vendor/lib64/libaiawb_sun_model.so
 -vendor/lib64/libalCFR.so
+-vendor/lib64/libarcsoft_dualcam_refocus_image.so
+-vendor/lib64/libarcsoft_dualcam_refocus_video.so
+-vendor/lib64/libarcsoft_hdr_detection.so
+-vendor/lib64/libarcsoft_high_dynamic_range.so
 -vendor/lib64/libarcsoft_low_light_hdr.so
 -vendor/lib64/libbwc.so
 -vendor/lib64/libcam.halsensor.hwintegration.so

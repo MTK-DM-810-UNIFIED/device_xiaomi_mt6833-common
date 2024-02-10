@@ -3,6 +3,7 @@ genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/clk_enable
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/fingerdown_wait              u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/irq                          u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/11019000.spi5/spi_master/spi5/spi5.0/wakeup_enable                u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/fingerprint                                                       u:object_r:vendor_sysfs_fingerprint:s0
 
 # Health
 genfscon sysfs /devices/platform/mt_charger/power_supply/ac                                        u:object_r:sysfs_batteryinfo:s0

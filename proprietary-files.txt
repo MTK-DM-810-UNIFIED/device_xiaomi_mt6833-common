@@ -255,6 +255,9 @@ vendor/etc/init/mtk_agpsd_p.rc
 -vendor/lib64/libDR.so
 -vendor/lib64/libmnl.so
 
+# GNSS - from Redmi/vnd_gold/gold:12/TP1A.220624.014/V14.0.1.0.TNQCNXM:user/release-keys
+-vendor/lib64/libviagpsrpc.so|f1b44aa87bbce65597f4c04860e43501891f8223
+
 # GNSS Configs
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml

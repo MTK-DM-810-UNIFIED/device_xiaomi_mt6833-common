@@ -232,6 +232,7 @@ ro.vendor.mtk_uicc_clf=1
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
 ro.vendor.radio.max.multisim=dsds
+ro.vendor.se.type=HCE,UICC
 ro.vendor.sim_me_lock_mode=3
 ro.vendor.sim_me_lock_mode=3
 telephony.active_modems.max_count=2

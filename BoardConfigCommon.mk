@@ -193,6 +193,10 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
 
+ODM_MANIFEST_SKUS += nfc
+ODM_MANIFEST_NFC_FILES := \
+    $(COMMON_PATH)/configs/vintf/manifest_nfc.xml
+
 # WiFi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211

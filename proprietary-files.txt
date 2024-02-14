@@ -603,6 +603,15 @@ vendor/etc/init/vpud.rc
 -vendor/lib64/libstagefrighthw.so
 -vendor/lib64/libvpu5.so
 
+# NFC
+vendor/etc/st21nfc_conf.txt
+vendor/firmware/96_nfcCard_RTP.bin
+vendor/firmware/98_nfcCardSlow_RTP.bin
+vendor/firmware/NFC_card_rtp.bin
+vendor/firmware/NFC_card_slow_rtp.bin
+vendor/firmware/st21nfc_fw7.bin
+-vendor/lib64/nfc_nci.st21nfc.st.so
+
 # NVRAM
 -vendor/bin/fuelgauged
 -vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service

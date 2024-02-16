@@ -331,6 +331,34 @@ vendor/lib/egl/egl.cfg
 -product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IMS - from TECNO-CK9n UP1A.230519.001
+-system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
+system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
+-system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
+-system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar|44c69bf14d5603da7b6e1ed4dab18718e2ea1a41
+-system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
+-system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar|5fb483206340abeb02ee591a0826ad1ae64eb926
+-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
+-system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar|ee46343685e2ef8187a3044daa06658c4ca4e601
+-system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar|5d82ced0e635e4aa87f23871fa457dd1b032970d
+-system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar|0a0fa5bdc4f9c5426323621adb67389b48131a48
+-system_ext/lib64/libcomutils.so|fae6b5fd7628518eaf3e3eadac2133dd83f30839
+-system_ext/lib64/libimsma_adapt.so|b95939f797ba52d87bb9fa6ebf356e0fb4fcfe56
+-system_ext/lib64/libimsma_rtp.so|25b249764ba9df7d89f3af209f38e4cb4993ddb3
+-system_ext/lib64/libimsma.so|573e9c9f7d6879b7f23f0eb1c2ff12fcad3dd80b
+-system_ext/lib64/libimsma_socketwrapper.so|5a26aae9eee36b9e5dc8875aa68b20ced2e1b676
+-system_ext/lib64/libmtk_vt_service.so|890ddf6c84e1c99c2f575d673570e00c63f9ebe6
+-system_ext/lib64/libmtk_vt_wrapper.so|6f6f18d546a98676f7ed725f0acaebc5d6d58471
+-system_ext/lib64/libsignal.so|5595f5d7b6e7320572ec05ac199f951d141b516a
+-system_ext/lib64/libsink.so|9e1d49a08d3f7bd1cc4508877ca552c8927be8fc
+-system_ext/lib64/libsource.so|75cbf8a9741eb2aeb42e0469d00099905b1a797a
+-system_ext/lib64/libvcodec_capenc.so|3b5e76522a7331248c2864493fdade2bdf73c4c3
+-system_ext/lib64/libvcodec_cap.so|834445754d88428b01a8a09fcbc9903b3d15d785
+-system_ext/lib64/libvt_avsync.so|186a5263b1be36e3f5ba47c0e8b40bca48a6b382
+-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext|cdd9da0a0896031fd034069566bc80c332cdc9c1
+-system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|d12f0aef8da477595468df3cebb5fa4f0a8770be
+-system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk|175b1b2cd8efe9fb3e1753f0fac51893dbc08488
+
 # IMS
 -vendor/bin/hw/vtservice_hidl
 -vendor/bin/volte_clientapi_ua
@@ -345,35 +373,6 @@ vendor/etc/init/volte_rcs_ua.rc
 -vendor/lib64/libipsec_ims_shr.so
 -vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 -vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
-# IMS (System)
--system/bin/vtservice
-system/etc/init/init.vtservice.rc
--system/framework/mediatek-common.jar
--system/framework/mediatek-framework.jar
--system/framework/mediatek-ims-base.jar
--system/framework/mediatek-ims-common.jar
--system/framework/mediatek-ims-extension-plugin.jar
--system/framework/mediatek-telecom-common.jar
--system/framework/mediatek-telephony-base.jar
--system/framework/mediatek-telephony-common.jar
--system/lib64/libcomutils.so
--system/lib64/libimsma.so
--system/lib64/libimsma_adapt.so
--system/lib64/libimsma_rtp.so
--system/lib64/libimsma_socketwrapper.so
--system/lib64/libmtk_vt_service.so
--system/lib64/libmtk_vt_wrapper.so
--system/lib64/libsignal.so
--system/lib64/libsink.so
--system/lib64/libsource.so
--system/lib64/libvcodec_cap.so
--system/lib64/libvcodec_capenc.so
--system/lib64/libvsim-adaptor-client.so
--system/lib64/libvt_avsync.so
--system/priv-app/ImsService/ImsService.apk
--system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext
--system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext
 
 # IR
 -vendor/lib64/hw/consumerir.common.so

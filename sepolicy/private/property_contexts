@@ -3,3 +3,18 @@ demo.far                                               u:object_r:exported_syste
 demo.fb                                                u:object_r:exported_system_prop:s0
 demo.hole                                              u:object_r:exported_system_prop:s0
 demo.near                                              u:object_r:exported_system_prop:s0
+arc.IsDumpCfg                                          u:object_r:exported_system_prop:s0
+arc.LOGLEVEL                                           u:object_r:exported_system_prop:s0
+cam.egnsavefile.enable                                 u:object_r:exported_system_prop:s0
+camera.sensor.bokeh.preview.enabled                    u:object_r:exported_system_prop:s0
+persist.al.ldc.log                                     u:object_r:exported_system_prop:s0
+persist.camera.altekLDC.disableFaceUpdate              u:object_r:exported_system_prop:s0
+persist.camera.altekLDC.face                           u:object_r:exported_system_prop:s0
+persist.camera.fpc.debugsetting                        u:object_r:exported_system_prop:s0
+persist.vendor.camera.privapp.list                     u:object_r:exported_system_prop:s0
+
+# Graphics
+persist.glt.version                                    u:object_r:exported_system_prop:s0
+persist.graphics.egl                                   u:object_r:exported_system_prop:s0
+persist.meow.ddk_lock                                  u:object_r:exported_system_prop:s0
+ro.egl.blobcache.multifile                             u:object_r:exported_system_prop:s0

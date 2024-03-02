@@ -204,7 +204,7 @@ PRODUCT_COPY_FILES += \
 
 # IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir-service.mediatek
+    android.hardware.ir@1.0-service.xiaomi
 
 # Keymaster
 PRODUCT_PACKAGES += \

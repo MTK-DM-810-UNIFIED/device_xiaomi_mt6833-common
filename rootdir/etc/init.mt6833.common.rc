@@ -79,6 +79,7 @@ on fs
     # mount fstab
     mount_all --early
 
+    # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
     write /proc/sys/vm/swappiness 100
@@ -900,6 +901,9 @@ on property:sys.boot_completed=1
     write /dev/cpuset/background/cpus 4-5
     write /dev/cpuset/system-background/cpus 2-5
     write /dev/cpuset/restricted/cpus 2-5
+
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.mt6833
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1

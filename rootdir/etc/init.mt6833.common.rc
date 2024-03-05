@@ -924,10 +924,6 @@ service loghidlsysservice /system/bin/loghidlsysservice
     group system
     disabled
 
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
-
 # VSIM service (vendor OSI)
 service osi /system/bin/osi
     class main

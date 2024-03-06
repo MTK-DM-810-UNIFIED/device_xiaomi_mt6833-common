@@ -91,6 +91,9 @@ function blob_fixup {
 		vendor/lib*/libnir_neon_driver.so | vendor/lib*/libpq_prot.so)
 			symlink_fixup "${1}" "${2}"
 			;;
+		vendor/lib64/libwifi-hal-mtk.so)
+			"${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
+			;;
 	esac
 }
 if [ -z "${ONLY_TARGET}" ]; then

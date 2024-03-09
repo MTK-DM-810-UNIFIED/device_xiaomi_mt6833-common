@@ -388,7 +388,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
+    android.hardware.wifi@1.0-service-lazy.mediatek \
     hostapd \
     wpa_supplicant
 

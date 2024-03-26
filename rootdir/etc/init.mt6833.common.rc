@@ -822,6 +822,9 @@ on boot
     chmod 0600 /sys/bus/spi/devices/spi5.0/irq
     chmod 0200 /sys/bus/spi/devices/spi5.0/fingerdown_wait
 
+    # WiFi
+    setprop ro.boot.wificountrycode 00
+
 on property:sys.boot_completed=1
     write /sys/block/mmcblk0/queue/iostats 1
     write /sys/block/mmcblk0/queue/nr_requests 128

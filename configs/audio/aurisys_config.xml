@@ -228,7 +228,7 @@
         <library name="mtk_speech_enh"
                  lib_path="/vendor/lib/lib_speech_enh.so"
                  lib64_path="/vendor/lib64/lib_speech_enh.so"
-                 param_path="/vendor/etc/aurisys_param/Speech_AudioParam.xml"
+                 param_path="/vendor/etc/audio_param"
                  lib_dump_path="AUTO"
                  adb_cmd_key="MTKSE">
             <components>
@@ -412,7 +412,7 @@
 	<library name="sia81xx_sixth"
                  lib_path="/vendor/lib/libsixth.so"
                  lib64_path="/vendor/lib64/libsixth.so"
-                 param_path="/vendor/etc/aurisys_param"
+                 param_path="/vendor/etc/aurisys_param/sixth_param.txt"
                  lib_dump_path="AUTO"
                  adb_cmd_key="SIXTH">
             <components>

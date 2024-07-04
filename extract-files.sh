@@ -78,6 +78,10 @@ function blob_fixup {
 			grep -q "libshim_sink.so" "${2}" || \
 			"${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
 			;;
+		system_ext/lib*/libsource.so)
+			grep -q libui_shim.so "${2}" || \
+			"${PATCHELF}" --add-needed libui_shim.so "${2}"
+			;;
 		vendor/bin/hw/android.hardware.gnss-service.mediatek | \
 		vendor/lib*/hw/android.hardware.gnss-impl-mediatek.so)
 			grep -q "android.hardware.gnss-V1-ndk_platform.so" "${2}" && \

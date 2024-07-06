@@ -114,6 +114,10 @@ function blob_fixup {
 		vendor/lib*/libnir_neon_driver.so | vendor/lib*/libpq_prot.so)
 			symlink_fixup "${1}" "${2}"
 			;;
+		vendor/lib*/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
+			grep -q "libutils.so" "${2}" && \
+			"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+			;;
 		vendor/lib*/hw/vendor.mediatek.hardware.pq@*-impl.so)
 			grep -q "libutils.so" "${2}" && \
 			"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"

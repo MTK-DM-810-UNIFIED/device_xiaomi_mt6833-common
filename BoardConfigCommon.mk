@@ -78,14 +78,9 @@ BOARD_HAVE_MTK_FM := true
 # Kernel
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)-kernel/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/Image.gz
 
-BOARD_VENDOR_KERNEL_MODULES := \
-    $(wildcard $(DEVICE_PATH)-kernel/modules/*.ko)
-
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/headers
-TARGET_KERNEL_CONFIG := defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6833
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # MediaTek
 BOARD_HAS_MTK_HARDWARE := true

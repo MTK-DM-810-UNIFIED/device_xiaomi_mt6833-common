@@ -1,0 +1,17 @@
+# Allow access to the HALs
+hal_client_domain(hal_sensors_default, hal_audio)
+
+# Allow binder communication with hal_audio_default
+binder_call(hal_sensors_default, hal_audio_default)
+
+# Allow hal_sensors_default to find hal_audio_hwservice
+allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
+
+# Allow hal_sensors_default to read/write to sensor device
+allow hal_sensors_default sensor_device:chr_file rw_file_perms;
+
+# Allow hal_sensors_default to search sysfs leds
+allow hal_sensors_default sysfs_leds:dir search;
+
+# Allow hal_sensors_default to read sysfs led files
+allow hal_sensors_default sysfs_leds:file read;

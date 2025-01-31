@@ -266,7 +266,8 @@ PRODUCT_COPY_FILES += \
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
-    libtextclassifier_hash.vendor
+    libtextclassifier_hash.vendor \
+    libprocessgroup.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \

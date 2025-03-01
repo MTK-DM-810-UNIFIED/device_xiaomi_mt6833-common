@@ -58,6 +58,7 @@ vendor.mtk.camera.app.fd.video=1
 # DRM
 ro.netflix.bsp_rev=MTK6833-32817-1
 
+
 # FM Radio
 persist.vendor.connsys.fm_chipid=mt6631_6635
 ro.vendor.fm.platform=mt6631_6635
@@ -92,6 +93,7 @@ debug.sf.predict_hwc_composition_strategy=0
 debug.sf.use_phase_offsets_as_durations=1
 persist.sys.sf.color_saturation=1.1
 persist.sys.sf.native_mode=0
+persist.vendor.sys.mtkaal.function=0
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
 ro.hardware.vulkan=mali

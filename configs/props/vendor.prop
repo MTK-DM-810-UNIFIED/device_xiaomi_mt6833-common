@@ -139,10 +139,6 @@ ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.fhd=4
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.vga=16
-
-# LMK
-ro.lmk.kill_heaviest_task=true
-
 # IMS
 persist.vendor.anr.enhancement=0
 persist.vendor.ims_support=1
@@ -162,19 +158,6 @@ ro.hardware.consumerir=common
 
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts
-
-# LMK
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=70
-ro.lmk.swap_free_low_percentage=20
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=50
-
-# LMK tuning
-ro.lmk.filecache_min_kb=153600
-ro.lmk.kill_timeout_ms=50
-ro.lmk.stall_limit_critical=40
 
 # Media
 debug.mediatek.disp_decompress=1

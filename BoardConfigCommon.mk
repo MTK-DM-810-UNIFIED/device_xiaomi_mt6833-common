@@ -139,6 +139,7 @@ TARGET_BOARD_PLATFORM := mt6833
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
 
 # Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
 

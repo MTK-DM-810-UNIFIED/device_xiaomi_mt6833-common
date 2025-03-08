@@ -7,8 +7,6 @@
 COMMON_PATH := device/xiaomi/mt6833-common
 
 # A/B
-AB_OTA_UPDATER := true
-
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \

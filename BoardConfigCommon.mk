@@ -136,9 +136,6 @@ endif
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := mt6833
 
-# Power
-TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(COMMON_PATH):libperfmgr-ext-transsion
-
 # Properties
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop

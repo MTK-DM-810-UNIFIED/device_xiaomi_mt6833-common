@@ -82,6 +82,8 @@ ro.hardware.gatekeeper=beanpod
 # Graphics
 debug.sf.enable_hwc_vds=0
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.auto_latch_unsignaled=0
+debug.sf.disable_backpressure=0
 debug.mediatek.appgamepq_compress=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=false

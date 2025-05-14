@@ -331,6 +331,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     libmtkperf_client_vendor \
+    libperfctl_vendor \
     libpowerhalwrap_vendor
     
 PRODUCT_PACKAGES += \

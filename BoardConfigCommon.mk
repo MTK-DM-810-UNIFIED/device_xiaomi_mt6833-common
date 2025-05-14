@@ -80,9 +80,6 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6833
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
-# MediaTek
-BOARD_HAS_MTK_HARDWARE := true
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 

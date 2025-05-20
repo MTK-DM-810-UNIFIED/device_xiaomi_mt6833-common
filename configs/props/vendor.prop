@@ -75,6 +75,7 @@ ro.vendor.mtk_log_hide_gps=1
 ro.hardware.gatekeeper=beanpod
 
 # Graphics
+debug.sf.treat_170m_as_sRGB=1
 debug.mediatek.appgamepq_compress=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=16500000

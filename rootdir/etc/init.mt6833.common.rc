@@ -714,6 +714,9 @@ on boot
     chown system system /sys/class/leds/green/trigger
     chown system system /sys/class/leds/blue/trigger
 
+    # PowerHAL Hint Processing
+    setprop vendor.powerhal.init 1
+    
     # Permission for hibernation
     chown radio system /sys/power/tuxonice
     chown radio system /sys/power/tuxonice/do_hibernate
@@ -947,3 +950,6 @@ service mi_thermald /vendor/bin/mi_thermald
     class main
     user root
     group system
+
+
+

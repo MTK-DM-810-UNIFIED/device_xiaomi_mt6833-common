@@ -14,6 +14,7 @@ on early-init
     # boot perf. tune
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "0 0 0 0"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1
+    write /sys/module/drm/parameters/vblankoffdelay -1
 
 on init
     write /proc/bootprof "INIT:init"

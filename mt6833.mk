@@ -231,6 +231,7 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor \
+    libbase_shim \
     libstagefright_foundation-v33
 
 PRODUCT_COPY_FILES += \

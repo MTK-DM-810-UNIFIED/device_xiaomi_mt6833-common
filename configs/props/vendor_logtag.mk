@@ -258,4 +258,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.PowerHalMgrServiceImpl=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.PowerHalWifiMonitor=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.gralloc4=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.OpenGLRenderer=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.OpenGLRenderer=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.GPUAUX=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.HWUI=$(VENDOR_LOG_LEVEL)

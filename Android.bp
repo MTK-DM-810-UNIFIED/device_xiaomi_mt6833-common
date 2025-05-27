@@ -17,3 +17,16 @@ cc_library_shared {
     ],
     vendor_available: true,
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_mms_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.mms@1.0::IMms",
+        "vendor.mediatek.hardware.mms@1.1::IMms",
+        "vendor.mediatek.hardware.mms@1.2::IMms",
+        "vendor.mediatek.hardware.mms@1.3::IMms",
+        "vendor.mediatek.hardware.mms@1.4::IMms",
+        "vendor.mediatek.hardware.mms@1.5::IMms",
+        "vendor.mediatek.hardware.mms@1.6::IMms",
+    ],
+}
